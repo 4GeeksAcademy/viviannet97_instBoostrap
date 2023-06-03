@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Post</title>
+    <script
+      src="https://kit.fontawesome.com/873098f50c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--navbar Instagram-->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand"
+          ><h4 class="mb-0">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </h4></a
+        >
+        <div class="d-flex">
+          <button
+            type="button"
+            class="btn btn-success mx-5"
+            data-bs-toggle="modal"
+            data-bs-target="#createNew"
+          >
+            Create a new post
+          </button>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--modal-->
+    <div
+      class="modal fade"
+      id="createNew"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Create a new post
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body d-grid gap-2">
+            Caption
+            <textarea
+              class="form-control"
+              aria-label="With textarea"
+              placeholder="Add the caption of your post here"
+            ></textarea>
+
+            <div id="buttons-end">
+              <button type="button" class="btn btn-outline-secondary border">
+                <i class="fa-solid fa-camera"></i>
+              </button>
+              <button type="button" class="btn btn-outline-secondary border">
+                <i class="fa-solid fa-location-dot"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--nav Grid/Square-->
+    <ul
+      class="nav nav-tabs d-flex flex-row justify-content-center my-3"
+      id="myTab"
+      role="tablist"
+    >
+      <!--button grid-->
+
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          data-bs-toggle="tab"
+          data-bs-target="#grid"
+          type="button"
+        >
+          <i class="fa-solid fa-table-cells fa-sm"></i>
+        </button>
+      </li>
+
+      <!--button list-->
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          data-bs-toggle="tab"
+          data-bs-target="#list"
+          type="button"
+        >
+          <i class="fa-solid fa-square"></i>
+        </button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <!--content grid-->
+
+      <div class="tab-pane fade show active" id="grid">
+        <div class="row row-col-3 ms-1 me-1 p-0" id="firstRow">
+          <div id="picture1" class="col-sm-12 col-lg-4 p-2">
+            <img
+              class="img-responsive w-100"
+              alt=""
+              src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/09/26/16641836577629.jpg"
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+          <div id="picture2" class="col-sm-12 col-lg-4 p-2">
+            <img
+              src="https://media.istockphoto.com/id/488415298/es/foto/g%C3%B3ndola-en-canal-grande-con-puente-de-rialto-al-atardecer-venecia.jpg?s=612x612&w=0&k=20&c=bHz419tJLzyt2VhWr1Z2z_Ia2Hwv4OCbvgplpd737sw="
+              class="img-responsive w-100"
+              alt=""
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+
+          <div id="picture3" class="col-sm-12 col-lg-4 p-2">
+            <img
+              class="img-responsive w-100"
+              src="https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg"
+              alt=""
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+        </div>
+
+        <div class="row row-col-3 mt-1 ms-1 me-1 p-0" id="sndRow">
+          <div id="picture1" class="col-sm-12 col-lg-4 p-2">
+            <img
+              class="img-responsive w-100"
+              alt=""
+              src="https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg"
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+          <div id="picture2" class="col-sm-12 col-lg-4 p-2">
+            <img
+              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+              class="img-responsive w-100"
+              alt=""
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+
+          <div id="picture3" class="col-sm-12 col-lg-4 p-2">
+            <img
+              class="img-responsive w-100"
+              src="https://static.wixstatic.com/media/6ac7b7_3d35351db19e4a4b904105dd85434683~mv2.jpg/v1/fill/w_640,h_428,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6ac7b7_3d35351db19e4a4b904105dd85434683~mv2.jpg"
+              alt=""
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+        </div>
+
+        <div class="row row-col-3 mt-1 ms-1 me-1 p-0" id="thrdRow">
+          <div id="picture1" class="col-sm-12 col-lg-4 p-2">
+            <img
+              class="img-responsive w-100"
+              alt=""
+              src="https://mott.pe/noticias/wp-content/uploads/2019/03/los-50-paisajes-maravillosos-del-mundo-para-tomar-fotos.jpg"
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+          <div id="picture2" class="col-sm-12 col-lg-4 p-2">
+            <img
+              src="https://imagenes.lainformacion.com/files/twitter_thumbnail/uploads/imagenes/2019/07/30/5d3ff0dcd5671.jpeg"
+              class="img-responsive w-100"
+              alt=""
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+
+          <div id="picture3" class="col-sm-12 col-lg-4 p-2">
+            <img
+              class="img-responsive w-100"
+              src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg?w=2000"
+              alt=""
+              style="width: 430px; height: 300px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--content list-->
+      <div class="tab-pane fade d-grid-grid!important d-grid gap-2" id="list">
+        <!--card-1-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">First Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">1/9</p>
+            </div>
+          </div>
+          <img
+            src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/09/26/16641836577629.jpg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>204 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+
+        <!--card-2-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">Second Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">2/9</p>
+            </div>
+          </div>
+          <img
+            src="https://media.istockphoto.com/id/488415298/es/foto/g%C3%B3ndola-en-canal-grande-con-puente-de-rialto-al-atardecer-venecia.jpg?s=612x612&w=0&k=20&c=bHz419tJLzyt2VhWr1Z2z_Ia2Hwv4OCbvgplpd737sw="
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>10 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+
+        <!--card-3-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">Third Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">3/9</p>
+            </div>
+          </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>100 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+
+        <!--card-4-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">Fourth Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">4/9</p>
+            </div>
+          </div>
+          <img
+            src="https://img.freepik.com/foto-gratis/disparo-gran-angular-solo-arbol-que-crece-cielo-nublado-puesta-sol-rodeada-cesped_181624-22807.jpg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>108 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+
+        <!--card-5-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">Fifth Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">5/9</p>
+            </div>
+          </div>
+          <img
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>300 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+
+        <!--card-6-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">Sixth Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">6/9</p>
+            </div>
+          </div>
+          <img
+            src="https://static.wixstatic.com/media/6ac7b7_3d35351db19e4a4b904105dd85434683~mv2.jpg/v1/fill/w_640,h_428,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/6ac7b7_3d35351db19e4a4b904105dd85434683~mv2.jpg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>50 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+
+        <!--card-7-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">Seventh Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">7/9</p>
+            </div>
+          </div>
+          <img
+            src="https://mott.pe/noticias/wp-content/uploads/2019/03/los-50-paisajes-maravillosos-del-mundo-para-tomar-fotos.jpg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>180 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+
+        <!--card-8-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">Eighth Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">8/9</p>
+            </div>
+          </div>
+          <img
+            src="https://imagenes.lainformacion.com/files/twitter_thumbnail/uploads/imagenes/2019/07/30/5d3ff0dcd5671.jpeg"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>230 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+
+        <!--card-9-->
+        <div class="card mx-auto" style="width: 30rem">
+          <div id="header-card" class="row">
+            <div
+              id="right"
+              class="col d-flex justify-content-start align-items-center ms-1 mt-1"
+            >
+              <h5 class="card-title">Nineth Picture</h5>
+            </div>
+
+            <div id="left" class="col d-flex justify-content-end">
+              <p class="text-muted text-center mb-0 me-1 mt-1">9/9</p>
+            </div>
+          </div>
+          <img
+            src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg?w=2000"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-body p-0">
+            <p class="card-text mb-0 ms-1"><b>230 Likes</b></p>
+            <p class="card-text align-items-center m-1">Description of image</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
